@@ -1,0 +1,111 @@
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .mi-navbar{
+        display: flex;
+        .container{
+            display: flex;
+            justify-content: center;
+            .logo-aaaj{
+                display: none;
+            }
+            .name{
+                width: 300%;
+            }
+            .p-navbar{
+                font-size: 0.7rem;
+                color: aliceblue;
+                padding-top: 20px;
+                span{
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .mi-navbar{
+        display: flex;
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .logo-aaaj{
+            display: none;
+        }
+        .name{
+            width: 200%;
+        }
+        .p-navbar{
+            max-width: 1024px;
+            position: absolute;
+            font-size: 0.7rem;
+            color: aliceblue;
+            bottom: -10px;
+            right: 15%;
+            span{
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .mi-navbar{
+        display: flex;
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .logo-aaaj{
+            width: 100%;
+        }
+        .name{
+            width: 200%;
+        }
+        .p-navbar{
+            justify-content: end;
+            position: absolute;
+            font-size: 0.7rem;
+            color: aliceblue;
+            bottom: -10px;
+            right: 20%;
+            span{
+                        font-size: 0.8rem;
+                        font-weight: bold;
+            }
+        }
+    }
+}
+
+.mi-navbar{
+    font-size: 1.3rem;
+
+    .container{
+        .logo-aaaj{
+            img{
+                width: 50%;
+                margin-top: 2%;
+            }
+        }
+        .name{
+            img{
+                padding-top: 5%;
+                width: 80%;
+            }
+        }
+        .mis_links{
+            li{
+                margin: 10px;
+                &:hover{
+                    color: #DF0D0D;
+                    transition: .2s ease-in-out;
+                }
+            }
+        }
+    }
+}
